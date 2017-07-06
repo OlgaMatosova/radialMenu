@@ -1,0 +1,231 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  background: url("https://www.bams.com/themes/Bams/assets/images/hero-2.jpg") no-repeat 0 0;
+  background-size: cover;
+  overflow: hidden;
+  font-family: arial;
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.navbar-brand {
+  max-width: 150px;
+  display: inline-block;
+  float: left;
+}
+.navbar-brand img {
+  max-width: 100%;
+}
+
+.nav {
+  display: inline-block;
+  margin-right: 10px;
+}
+.nav li {
+  display: inline-block;
+}
+.nav li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 11px;
+  padding: 0 15px;
+}
+
+.login {
+  display: inline-block;
+  background: #505cf6;
+  border: 2px solid #505cf6;
+  border-radius: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 7px 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.request {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 7px 10px;
+}
+
+.align-left {
+  float: right;
+}
+
+.p_process {
+  color: #fff;
+  text-transform: uppercase;
+  float: left;
+  padding-top: 15px;
+  margin-left: 20px;
+  position: relative;
+  padding-right: 30px;
+  font-size: 11px;
+}
+
+.p_process:after {
+  position: absolute;
+  right: 0;
+  top: 22px;
+  content: '|';
+}
+
+.phone {
+  padding-left: 30px;
+  float: left;
+  padding: 15px;
+  color: #fff;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.phone img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.selector {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 280px;
+  height: 280px;
+  margin-top: -140px;
+  margin-left: -140px;
+}
+.selector.open .bubble {
+  opacity: 1;
+}
+.selector.open li a {
+  width: 65px;
+  height: 65px;
+  line-height: 80px;
+  margin-left: -40px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+.selector .bubble {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  border: 0;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  transition: all .5s;
+  opacity: 0;
+}
+.selector .bubble .circle {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  background: #428bca;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.selector .bubble .wrap {
+  width: 100%;
+}
+.selector .bubble h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.selector .pointer {
+  content: '';
+  display: block;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  background: #428bca;
+  border-radius: 50% 50%;
+  z-index: -1;
+  left: 0px;
+  transform: translate(119%, -28%);
+  transition: all 0.5s ease;
+}
+.selector ul {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: -58px;
+  right: -19px;
+  bottom: -79px;
+  left: 0;
+}
+.selector ul li {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  margin: 0 50%;
+  -webkit-transform: rotate(-360deg);
+  transition: all 0.8s ease-in-out;
+}
+.selector ul li.active a {
+  border: 2px solid #428bca;
+}
+.selector ul li a {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  line-height: 1px;
+  margin-left: 0;
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: none;
+  padding: 15px;
+  transition: all 0.8s ease-in-out, color 0.1s, background 0.1s;
+}
+.selector ul li a:hover {
+  background: #f0f0f0;
+}
+.selector ul li a img {
+  max-width: 90%;
+}
+
+/*# sourceMappingURL=main.css.map */
